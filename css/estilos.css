@@ -1,0 +1,135 @@
+
+/* Estilo general*/
+body {
+    background-color: rgb(235, 252, 235);
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    display:grid
+}
+
+/*Estilos de los titulos y boxes */
+h1{
+    border: 30px ridge rgb(98, 100, 247);
+    border-radius: 15px;
+    background-color: rgb(134, 205, 252);
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 30px 10px 30px ;
+    width:fit-content ; 
+    justify-self: center;
+
+    font-weight: bold;
+    font-size:60px ;
+    color: black;
+    text-align: center;
+}
+
+.box1 {
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(134, 205, 252);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 30px 10px 30px ;
+    width:fit-content ; 
+
+    font-weight: bold;
+    font-size: 40px ;
+    color: black;
+  }
+
+
+.box2 {
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(195, 229, 252);
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 30px 10px 30px ;
+
+    width:fit-content ; 
+
+    font-weight: bold;
+    font-size: 30px ;
+    color: black;
+}
+
+.box3 {
+    align-items: center;
+    justify-self: left;
+    justify-content: center;
+
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(195, 229, 252);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 30px 10px 30px ;
+    width: 33% ; 
+
+    font-size: 20px ;
+    color: black;
+}
+
+/* Estilo de los botones del panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+  
+/* Color de la barra al hacer click o pasar el mouse */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color:  rgb(235, 252, 235);
+    display: none;
+    overflow: hidden;
+    /*font-weight: bold;*/
+}
+
+/* Agregado del "+" en la barra al estar contraida*/
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+      margin-left: 5px;
+}
+
+/* Agregado del "-" en la barra al estar expandida*/
+.active:after {
+  content: "\2796";
+}
